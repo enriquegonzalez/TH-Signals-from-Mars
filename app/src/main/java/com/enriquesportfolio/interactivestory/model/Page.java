@@ -66,5 +66,4 @@ public class Page {
         mIsFinal = isFinal;
     }
 
-
 }

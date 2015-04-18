@@ -10,6 +10,7 @@ import android.widget.EditText;
 import com.enriquesportfolio.interactivestory.R;
 
 
+// This is the controller
 public class MainActivity extends ActionBarActivity {
 
     private EditText mNameField;
@@ -38,4 +39,10 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Resets the enter your name field when user selects Play Again.
+        // mNameField.setText("");
+    }
 }
